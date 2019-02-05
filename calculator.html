@@ -12,12 +12,24 @@
 
        </script>
 
+
        <script type="text/javascript">
 	function cube2() {  var num = document.getElementById("n1");  
 	num.value = Math.sin(num.value);}
 	document.getElementById("n1").value=num.value;
+	 </script>
+
+       	   <script type="text/javascript">
+	function cube3() {  var num = document.getElementById("n1");  
+	num.value = Math.pow(num.value, 4);}
+
+	document.getElementById("n1").value=num.value;
 
        </script>
+
+
+
+
 
 </head>
 
@@ -25,8 +37,12 @@
 <body>  
 	<h1>Calculadora de ......Eduardo Cabrera.........</h1> 
 	 Number:  <input type="text" id="n1">
+
 	 <p>  <button onclick="cube1()"> x^3 </button>  </p>
 	 <p>  <button onclick="cube2()"> sin(x) </button>  </p>
+
+	 <p>  <button onclick="cube3()"> x^4 </button>  </p>
+
 
 </body>
 
